@@ -1,0 +1,26 @@
+<div>
+    <label for="onMouseEnter">Entrada do Mouse:</label>
+    <input type="text" id="onMouseEnter" onmouseenter="mouseEnterEvent()">
+  </div>
+  <br>
+  <div> 
+    <!-- Posso chama a funcao no evento ou passar codigo js nele -->
+    <label for="onChange">Mudança de Valor:</label>
+    <input type="text" id="onChange" onchange="console.log('Mudança de valor')">
+  </div>
+  <br>
+  <div>
+    <label for="onFocus">Entrada de Foco:</label>
+    <input type="text" id="onFocus" onfocus="focusEvent()">
+  </div>
+  <br>
+  <div>
+    <label for="onBlur">Saída de Foco:</label>
+    <input type="text" id="onBlur" onblur="blurEvent()">
+  </div>
+  <br>
+  <button onclick="clickEvent()">
+    Clique-me!
+  </button>
+
+  <script src="./index.js"></script>
