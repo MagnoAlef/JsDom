@@ -25,6 +25,8 @@ function addPlayer() {
     const confirmation = confirm("Remover o jogador " + playerToRemove.innerText + "?")
   
     if (confirmation) {
+    // Remover o proprio elemento direto
+    //playerToRemove.remove()
       document.getElementById("team-list").removeChild(playerToRemove)
       document.getElementById("numberToRemove").value = ""
     }
