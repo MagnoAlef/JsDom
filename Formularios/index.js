@@ -23,4 +23,6 @@ form.addEventListener('submit' , function (ev){
         salad,
         observations
     })
+
+    alert(`Pedido realizado\nNome do cliente: ${name}\nEndereço de entrega: ${address}\nTipo de pão: ${breadType}\n Recheio: ${main}n\ ${salad}\nObservações: ${observations}`)
 })
