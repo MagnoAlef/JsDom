@@ -14,7 +14,8 @@ function createLabel(text, htmlFor) {
     input.placeholder = placeholder
     return input
   }
-  const addTechBtn = document.getElementById('addTechBtn')
+
+const addTechBtn = document.getElementById('addTechBtn')
 const form = document.getElementById('devForm')
 const developers = []
 let inputRows = 0
@@ -50,18 +51,18 @@ addTechBtn.addEventListener('click', function (ev) {
     })
   
   
-    newRow.append(
+    newRow.append( // Append pode ser adicionado varios filhos
       techNameLabel, techNameInput, expLabel, expRadio1, expLabel1, expRadio2, expLabel2, expRadio3, expLabel3, removeRowBtn
     )
   
-    stackInputs.appendChild(newRow)
+    stackInputs.appendChild(newRow) // AppendChild pode ser adicionado somente um filho
   })
 
   form.addEventListener('submit', function (ev) {
     ev.preventDefault()
   
     const fullnameInput = document.getElementById('fullname')
-    const inputRows = document.querySelectorAll('.inputRow')
+    const inputRows = document.querySelectorAll('.inputRow') // Pegando todas as linhas pela classe
   
     let technologies = []
     inputRows.forEach(function (row) {

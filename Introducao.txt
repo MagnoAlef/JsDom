@@ -1,3 +1,3 @@
 Curso de Js com o Dom
 
-Proxima aula 15 Resolução parte 1
+Proxima aula 17 Manipulando Estilos com Javascript
