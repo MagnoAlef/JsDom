@@ -35,6 +35,7 @@ document.getElementById("equal").addEventListener("click", calculate)
 function calculate() {
   resultInput.value = "ERROR"
   resultInput.classList.add("error")
+  //Caso ele der erro a funcao eval para o codigo abaixo
   const result = eval(input.value)// eval serve para avaliar o codigo js -> como estou passando o valor pelo input ele vai calcular
   resultInput.value = result
   resultInput.classList.remove("error")
