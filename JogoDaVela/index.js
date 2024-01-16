@@ -82,7 +82,7 @@ function handleBoardClick(ev) {
   const winRegions = getWinRegions()
   if (winRegions.length > 0) {
     handleWin(winRegions)
-  } else if (vBoard.flat().includes('')) {
+  } else if (vBoard.flat().includes('')) { // flat tranforma tudo somente em um array
     turnPlayer = turnPlayer === 'player1' ? 'player2' : 'player1'
     updateTitle()
   } else {
